@@ -120,6 +120,30 @@
   border: 1px solid rgba(99, 102, 241, 0.3);
 }
 
+/* ── Tablet (max 1024px) ── */
+@media (max-width: 1024px) {
+  .skills-inner { padding: 0 40px; }
+  .marquee-label { width: 150px; }
+}
+
+/* ── Mobile (max 768px) ── */
+@media (max-width: 768px) {
+  .skills-section { padding: 72px 0; }
+  .skills-inner { padding: 0 20px; }
+
+  .marquee-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 16px 0;
+  }
+
+  .marquee-label { width: 100%; font-size: 10px; }
+  .marquee-track { width: 100%; }
+  .marquee-track::after { display: none; }
+  .tag { font-size: 12px; padding: 5px 13px; }
+}
+
 [data-theme="light"] .tag--indigo { background: rgba(99,102,241,0.1); color: #4f46e5; }
 [data-theme="light"] .tag--purple { background: rgba(124,110,240,0.1); color: #6355d4; }
 [data-theme="light"] .tag--teal   { background: rgba(78,205,196,0.1);  color: #1a9e96; }

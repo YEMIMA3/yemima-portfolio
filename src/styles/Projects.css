@@ -168,3 +168,17 @@
   color: var(--accent2);
   border-color: rgba(78,205,196,0.4);
 }
+
+/* ── Tablet (max 1024px) ── */
+@media (max-width: 1024px) {
+  .projects-grid { grid-template-columns: 1fr; gap: 20px; }
+}
+
+/* ── Mobile (max 768px) ── */
+@media (max-width: 768px) {
+  .projects-grid { grid-template-columns: 1fr; gap: 14px; }
+  .proj-card { padding: 24px 20px; border-radius: 18px; }
+  .proj-number { font-size: 36px; }
+  .proj-title { font-size: 20px; }
+  .proj-desc { font-size: 12px; }
+}

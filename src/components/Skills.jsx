@@ -30,7 +30,7 @@ const skillCategories = [
   {
     label: "Core Subjects",
     color: "indigo",
-    skills: ["DataBase Management Systems (DBMS)","Operating Systems","Computer Networks","Data Structures & Algorithms (DSA)"],
+    skills: ["DataBase Management Systems (DBMS)","Operating Systems","Computer Networks","Data Structures & Algorithms (DSA)","Object-Oriented Programming (OOP)"],
   }
 ];
 

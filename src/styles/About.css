@@ -68,3 +68,12 @@
   color: var(--text);
   font-weight: 500;
 }
+
+/* ── Mobile (max 768px) ── */
+@media (max-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+  .detail-row:hover { transform: none; }
+}

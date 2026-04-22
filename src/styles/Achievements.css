@@ -83,3 +83,16 @@
   width: 48px;
   border-radius: 3px;
 }
+
+/* ── Tablet (max 1024px) ── */
+@media (max-width: 1024px) {
+  .ach-grid { grid-template-columns: 1fr 1fr; gap: 18px; }
+}
+
+/* ── Mobile (max 768px) ── */
+@media (max-width: 768px) {
+  .ach-grid { grid-template-columns: 1fr; gap: 14px; }
+  .ach-card { padding: 24px 20px 20px; border-radius: 18px; }
+  .ach-title { font-size: 16px; }
+  .ach-desc { font-size: 12px; }
+}
