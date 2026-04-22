@@ -1,0 +1,110 @@
+.contact-wrap {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 32px;
+  padding: 72px 56px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-orb {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  filter: blur(70px);
+}
+
+.contact-orb--1 {
+  width: 400px; height: 300px;
+  bottom: -120px; left: 50%;
+  transform: translateX(-50%);
+  background: rgba(124,110,240,0.18);
+}
+
+.contact-orb--2 {
+  width: 250px; height: 200px;
+  top: -80px; right: 10%;
+  background: rgba(255,107,157,0.12);
+}
+
+.contact-badge {
+  display: inline-block;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--accent2);
+  border: 1px solid rgba(78,205,196,0.3);
+  background: rgba(78,205,196,0.08);
+  padding: 6px 18px;
+  border-radius: 60px;
+  margin-bottom: 28px;
+  font-weight: 600;
+  position: relative;
+}
+
+.contact-title {
+  font-family: var(--font-head);
+  font-size: clamp(36px, 5vw, 52px);
+  font-weight: 800;
+  letter-spacing: -1.5px;
+  line-height: 1.1;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.contact-sub {
+  color: var(--muted);
+  margin-bottom: 44px;
+  font-size: 15px;
+  position: relative;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: 60px;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  border: 1px solid var(--border-strong);
+  color: var(--muted);
+  transition: border-color 0.2s, color 0.2s, transform 0.2s, background 0.2s;
+}
+
+.contact-link-icon {
+  display: flex;
+  align-items: center;
+}
+
+.contact-link-icon svg { width: 14px; height: 14px; }
+
+.contact-link:hover {
+  border-color: var(--accent);
+  color: var(--text);
+  transform: translateY(-2px);
+}
+
+.contact-link--primary {
+  background: var(--grad1);
+  color: white;
+  border-color: transparent;
+  box-shadow: 0 4px 20px rgba(124,110,240,0.3);
+}
+
+.contact-link--primary:hover {
+  opacity: 0.9;
+  color: white;
+  border-color: transparent;
+  box-shadow: 0 8px 28px rgba(124,110,240,0.4);
+}
